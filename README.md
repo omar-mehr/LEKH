@@ -1,14 +1,7 @@
-# PA1493 Software Development Project (Distance) HT26
-
----
-
 ## Project Description
 
 **Project Name:** *Lab Equipment Knowledge Hub (LEKH)*
 
-**Customer Name:** *Zeth Danielsson*
-
-**Student Full Name:** *Omar Mehr*
 
 ### Project Aim and Objectives
 
@@ -22,16 +15,6 @@ Allow users to see equipment availability and manage borrowing and returns.
 Support reporting of faulty or damaged equipment.
 Provide different functionality and access depending on the user's role.
 Make the system accessible from computers and mobile devices on the local network.
-
-### User Personas
-
-| Name | Characteristics | Needs and Expectations | How will they use the system? |
-|---|---|---|---|
-|*Student*|*Student with basic to intermediate technical skills who uses laboratory equipment for courses and projects.*|*Needs to quickly find equipment, view information, guides, images and datasheets, and see whether equipment is available.*|*Searches and browses equipment, views equipment information, requests equipment, borrows and returns equipment, and reports faults.*|
-|*Caretaker*|*Person responsible for managing laboratory equipment and supporting students. Has good knowledge of the equipment and its use.*|*Needs to manage equipment information, availability, loans, faults and maintenance-related information.*|*Adds and updates equipment information, manages equipment status, handles borrowing requests, and manages reported faults.*|
-|*Administrator*|*User responsible for administration of the system. Has higher technical and administrative access.*|*Needs to manage users, roles and system access and ensure that the system is used correctly.*|*Manages user accounts and roles, controls access to system functionality, and performs administrative tasks.*|
-
-
 
 
 ### Software Requirements
