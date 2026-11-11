@@ -1,0 +1,151 @@
+.dashboard,
+.caretaker-dashboard,
+.admin-dashboard {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.student-header,
+.caretaker-header,
+.admin-header {
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.student-header h1,
+.caretaker-header h1,
+.admin-header h1 {
+    margin: 0 0 8px 0;
+}
+
+.student-menu-button,
+.caretaker-menu-button,
+.admin-menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 130px;
+    box-sizing: border-box;
+    text-align: left;
+    border: 1px solid var(--form-border);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--form-button-text);
+}
+
+.student-menu-button span,
+.caretaker-menu-button span,
+.admin-menu-button span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.student-menu-button small,
+.caretaker-menu-button small,
+.admin-menu-button small {
+    color: var(--text-small);
+    font-size: 14px;
+}
+
+.student-menu-button:hover,
+.caretaker-menu-button:hover,
+.admin-menu-button:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+.student-content,
+.caretaker-content,
+.admin-content {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dashboard-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.scan-qr-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 28px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.scan-qr-button:hover {
+    transform: translateY(-2px);
+}
+.dashboard-actions .scan-qr-button {
+    flex: 1 1 0;
+    min-width: 0;
+    box-sizing: border-box;
+}
+.dashboard-actions > :last-child {
+    flex: 1 1 0;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .dashboard,
+    .caretaker-dashboard,
+    .admin-dashboard {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+        overflow-x: hidden;
+    }
+
+    .student-header,
+    .caretaker-header,
+    .admin-header {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .student-header h1,
+    .caretaker-header h1,
+    .admin-header h1 {
+        font-size: 28px;
+        letter-spacing: -0.5px;
+        overflow-wrap: break-word;
+    }
+
+    .student-menu-button,
+    .caretaker-menu-button,
+    .admin-menu-button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .caretaker-header p,
+    .admin-header p {
+        font-size: 14px;
+    }
+
+    .dashboard-actions {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+}

@@ -1,0 +1,154 @@
+
+.guide-edit-container {
+    width: 100%;
+}
+
+.guide-selector,
+.guide-information,
+.guide-step {
+    background: var(--form-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 24px;
+}
+
+.guide-selector {
+    margin-bottom: 24px;
+}
+
+.guide-selector label,
+.guide-step-content label,
+.guide-step-image label,
+.guide-step-video label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--form-text);
+}
+
+.guide-selector .select-field {
+    width: 100%;
+}
+
+.guide-edit-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.guide-information {
+    position: static;
+}
+
+.guide-section-title {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-h);
+}
+
+.category-group {
+    margin-bottom: 20px;
+}
+
+.guide-information textarea,
+.guide-step-content .input-field {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.guide-information textarea {
+    min-height: 150px;
+}
+
+.guide-step {
+    margin-bottom: 24px;
+}
+
+.guide-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.guide-step-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.guide-step-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-h);
+}
+
+.guide-step-content {
+    margin-bottom: 24px;
+}
+
+.guide-step-content .input-field {
+    min-height: 160px;
+}
+
+.guide-step-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.guide-step-image,
+.guide-step-video {
+    background: var(--form-input-bg);
+    border: 1px solid var(--form-input-border);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.guide-step-image-preview {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    background: var(--form-bg);
+    border-radius: 8px;
+}
+
+.guide-step-video a {
+    color: var(--accent);
+    word-break: break-word;
+}
+
+.guide-error {
+    color: var(--error);
+}
+
+.guide-success {
+    color: var(--success);
+}
+
+.guide-save-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .guide-selector,
+    .guide-information,
+    .guide-step {
+        padding: 16px;
+    }
+
+    .guide-step-image-preview {
+        height: 300px;
+    }
+
+    .guide-step-media {
+        grid-template-columns: 1fr;
+    }
+}

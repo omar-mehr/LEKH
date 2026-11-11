@@ -1,0 +1,154 @@
+.loan-page {
+    width: 100%;
+}
+
+.loan-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.loan-page-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.loan-page-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+}
+
+.loan-total {
+    min-width: 75px;
+    padding: 12px 18px;
+    border: 1px solid var(--form-border);
+    border-radius: 10px;
+    background-color: var(--form-bg);
+    text-align: center;
+}
+
+.loan-total strong {
+    display: block;
+    font-size: 22px;
+}
+
+.loan-total span {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.loan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.loan-card {
+    padding: 20px;
+    border: 1px solid var(--form-border);
+    border-radius: 12px;
+    background-color: var(--form-bg);
+    box-shadow: 0 4px 12px var(--form-button-shadow);
+}
+
+.loan-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--form-border);
+}
+
+.loan-card-top h2 {
+    margin: 3px 0 0;
+    font-size: 22px;
+}
+
+.loan-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.loan-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--bg);
+    color: var(--success);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.loan-equipment {
+    padding: 18px 0;
+}
+
+.loan-equipment h3 {
+    margin: 0;
+    font-size: 19px;
+}
+
+.loan-dates {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.loan-dates strong {
+    font-size: 15px;
+}
+
+.loan-empty {
+    padding: 40px 20px;
+    border: 1px dashed var(--form-border);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.loan-empty h2 {
+    margin: 0 0 8px;
+}
+
+.loan-empty p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.loan-error {
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: var--(bg);
+    color: var(--error);
+}
+
+.renewal-success {
+    color: var(--success);
+}
+
+.renewal-error {
+    color: var(--error);
+}
+
+.loan-actions {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .loan-page-header {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .loan-dates {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .loan-card {
+        padding: 16px;
+    }
+}

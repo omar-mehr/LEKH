@@ -1,0 +1,218 @@
+.equipment-overview {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.equipment-overview h1 {
+    position: relative;
+    top: -30px;
+    text-align: center;
+    color: var(--form-text);
+}
+
+.equipment-type-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.equipment-type-card {
+    flex: 1 1 280px; /* grow: 1, shrink: 1, basis: 280px */
+    max-width: 360px; /* Maximum width */
+    padding: 24px;
+    background: var(--form-bg);
+    border: 1px solid var(--form-border);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+}
+
+.equipment-type-card h2 {
+    margin: 0 0 10px;
+    color: var(--form-text);
+}
+
+.equipment-unit-count {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    background-color: #e8f0fe;
+    color: #2f5bea;
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.equipment-description {
+    margin-bottom: 20px;
+    color: var(--form-text);
+    opacity: 0.75;
+}
+
+.individual-equipment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 8px;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--form-border) transparent;
+}
+
+.individual-equipment-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.individual-equipment-list::-webkit-scrollbar-thumb {
+    background: var(--form-border);
+    border-radius: 10px;
+}
+
+.individual-equipment-list::-webkit-scrollbar-thumb:hover {
+    background: var(--form-text);
+}
+
+
+.individual-equipment {
+    padding: 16px;
+    background: rgba(128, 128, 128, 0.08);
+    border: 1px solid var(--form-border);
+    border-radius: 12px;
+}
+
+.individual-equipment p {
+    margin: 5px 0;
+    color: var(--form-text);
+}
+
+.specs {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.no-equipment {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+ .equipment-overview button  button {
+    width: 50%;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 9px;
+    background: var(--form-button-bg);
+    color:var(--form-button-text);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 12px;
+}
+
+ .equipment-overview button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px var(--form-button-shadow);
+}
+
+.equipment-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+
+
+.equipment-type-image {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.popup-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--box-shadow);
+    z-index: 1000;
+}
+
+@media (max-width: 600px) {
+    .equipment-overview {
+        margin: 20px auto;
+        padding: 12px;
+    }
+
+    .equipment-overview h1 {
+        top: 0;
+        font-size: 24px;
+    }
+
+    .equipment-type-grid {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .equipment-type-card {
+        flex: 1 1 auto;
+        max-width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .equipment-type-card h2 {
+        font-size: 20px;
+    }
+
+    .equipment-unit-count {
+        margin-left: 6px;
+        padding: 3px 7px;
+        font-size: 12px;
+    }
+
+    .equipment-description {
+        overflow-wrap: break-word;
+    }
+
+    .equipment-type-image {
+        max-width: 100%;
+        max-height: 200px;
+        object-fit: contain;
+    }
+
+    .equipment-buttons {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .equipment-buttons button {
+        flex: 1 1 120px;
+        width: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .individual-equipment-list {
+        max-height: 400px;
+        padding-right: 4px;
+    }
+
+    .individual-equipment {
+        padding: 12px;
+        overflow-wrap: break-word;
+    }
+
+    .popup-box {
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}

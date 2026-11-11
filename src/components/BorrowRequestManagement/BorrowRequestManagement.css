@@ -1,0 +1,252 @@
+.borrow-request-management {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.borrow-request-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    
+    
+}
+
+.borrow-request-header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+.borrow-request-header p {
+    margin: 0;
+    color: var(--text);
+}
+
+.request-count {
+    min-width: 80px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background: var(--form-bg);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.request-count span {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--text);
+}
+
+.borrow-request-list {
+    display: grid;
+    gap: 18px;
+}
+
+.borrow-request-card {
+    padding: 22px;
+    background: var(--form-bg);
+    border: var(--form-border);
+    border-radius: 14px;
+    box-shadow: var(--box-shadow);
+}
+
+.borrow-request-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.borrow-request-card-header h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.request-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.request-status.pending {
+    background: var(--text-status);
+    color: var(--maintance)
+}
+
+.request-status.approved {
+    background: var(--text-status);
+    color: var(--success)
+}
+
+.request-status.rejected {
+    background: var(--text-status);
+    color: var(--error)
+}
+
+.request-status.expired {
+    background: var(--text-status);
+    color: var(--error)
+}
+
+.borrow-request-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.borrow-request-info div {
+    padding: 14px;
+    background: var(--form-input-bg);
+    border: 1px solid var(--form-input-border);
+    border-radius: 10px;
+}
+
+.info-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: var(--text);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.borrow-request-purpose {
+    padding: 16px;
+    background: var(--form-input-bg);
+    border: 1px solid var(--form-input-border);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.borrow-request-purpose p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.borrow-request-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.borrow-request-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.approve-button {
+    background: var(--success);
+    color: var(--text);
+}
+
+.approve-button:hover {
+    background: var(--success)
+}
+
+.reject-button {
+    background: var(--error);
+    color: var(--text);
+}
+
+.reject-button:hover {
+    background: var(--error)
+}
+
+
+
+.borrow-request-error {
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: var(--error);
+}
+
+.no-borrow-requests {
+    padding: 50px 20px;
+    text-align: center;
+    background: var(--form-input-bg);
+    border: 1px dashed var(--form-input-border);
+    border-radius: 14px;
+}
+
+.no-borrow-requests h2 {
+    margin-bottom: 8px;
+}
+
+.no-borrow-requests p {
+    margin: 0;
+    color: var(--text);
+}
+
+.checkout-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.borrow-request-search-input {
+    display: block;
+    width: 100%;
+    max-width: 30%;
+    padding: 13px 18px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: transparent;
+    color: var(--form-text);
+    font-family: var(--mono);
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid var(--form-border);
+    border-radius: 0;
+    transition: border-color 0.2s ease, padding 0.2s ease;
+}
+
+.borrow-request-search-input:focus {
+    outline: none;
+    border-bottom-color: var(--form-focus);
+    padding-left: 22px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .borrow-request-header {
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .borrow-request-info {
+        grid-template-columns: 1fr;
+    }
+
+    .borrow-request-actions {
+        justify-content: stretch;
+    }
+
+    .borrow-request-actions button {
+        flex: 1;
+    }
+    .checkout-section {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .borrow-request-search-input {
+        max-width: 100%;
+    }
+}

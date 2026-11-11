@@ -1,0 +1,132 @@
+.fault-reports {
+    width: 100%;
+    max-width: 600px;
+    max-height: 75vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 28px;
+    margin: 0 auto;
+    background: var(--form-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    text-align: left;
+}
+
+.fault-reports h2 {
+    margin-bottom: 20px;
+    color: var(--text-h);
+    text-align: center;
+}
+
+.fault-reports-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.fault-report-card {
+    padding: 18px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.fault-report-description {
+    margin-bottom: 16px;
+    color: var(--text-h);
+    line-height: 1.5;
+}
+
+.fault-report-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.fault-report-detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.fault-report-label {
+    color: var(--text);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.fault-report-value {
+    color: var(--text-h);
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.fault-report-status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: var(--accent-bg);
+    border: 1px solid var(--accent-border);
+    color: var(--text-h);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.fault-reports-message {
+    padding: 16px;
+    margin: 12px 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.fault-reports-error {
+    color: var(--error);
+    border-color: var(--error);
+}
+
+.fault-reports-close {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: var(--form-button-bg);
+    color: var(--form-button-text);
+    box-shadow: 0 4px 10px var(--form-button-shadow);
+    font: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 600px) {
+    .fault-reports {
+        padding: 18px;
+        max-height: 80vh;
+    }
+
+    .fault-report-card {
+        padding: 14px;
+    }
+
+    .fault-report-detail {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .fault-report-value {
+        text-align: left;
+    }
+}

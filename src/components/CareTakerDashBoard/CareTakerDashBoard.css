@@ -1,0 +1,33 @@
+.caretaker-header p {
+    margin: 0;
+    color: var(--text-small);
+}
+
+.caretaker-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.caretaker-menu-button {
+    padding: 20px;
+    background-color: var(--form-bg);
+    transition: 0.2s;
+}
+
+.caretaker-menu-button:hover {
+    box-shadow: 0 8px 20px var(--form-button-shadow);
+}
+
+@media (max-width: 600px) {
+    .caretaker-menu {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .caretaker-menu-button {
+        width: 100%;
+        max-width: 100%;
+    }
+}

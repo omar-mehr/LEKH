@@ -1,0 +1,15 @@
+.theme-toggle-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+select {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    padding: 8px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+
+.scan-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.scan-container h2 {
+    margin-bottom: 20px;
+}
+
+.scanner-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+}

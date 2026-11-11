@@ -1,0 +1,202 @@
+
+.search-interface {
+    position: relative;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.search-interface input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 18px;
+    background-color: var(--form-input-bg);
+    border: 1px solid var(--form-input-border);
+    color: var(--form-text);
+    font-family: var(--sans);
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-results {
+    margin-top: 12px;
+    background-color: var(--form-bg);
+    border: 1px solid var(--form-border);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    padding: 16px;
+}
+
+.search-result-section {
+    margin-bottom: 20px;
+}
+
+.search-result-section:last-child {
+    margin-bottom: 0;
+}
+
+.search-result-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-small);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.search-result-item {
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    background-color: var(--form-input-bg);
+    border: 1px solid var(--form-border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-result-item:last-child {
+    margin-bottom: 0;
+}
+
+.search-result-item:hover {
+    border-color: var(--form-button-bg);
+    transform: translateY(-1px);
+}
+
+.search-result-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--form-text);
+}
+
+.search-result-details {
+    margin-top: 4px;
+    font-size: 13px;
+    color: var(--text-small);
+}
+
+.search-no-results {
+    font-size: 14px;
+    color: var(--text-small);
+    padding: 8px 0;
+}
+
+/* Selected equipment */
+
+.search-interface > .equipment-page {
+    margin-top: 24px;
+    padding: 28px;
+    background-color: var(--form-bg);
+    border: 1px solid var(--form-border);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Selected guide */
+
+.search-interface > .guide-details {
+    margin-top: 24px;
+    padding: 28px;
+    background-color: var(--form-bg);
+    border: 1px solid var(--form-border);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.search-interface > .guide-details h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.search-interface > .guide-details > p {
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: var(--text-small);
+}
+
+/* Guide steps */
+
+.search-interface .guide-step {
+    padding: 18px;
+    margin-top: 12px;
+    background-color: var(--form-input-bg);
+    border: 1px solid var(--form-border);
+    border-radius: 8px;
+}
+
+.search-interface .guide-step h6 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: var(--form-text);
+}
+
+.search-interface .guide-step p {
+    margin: 0;
+    line-height: 1.5;
+    color: var(--form-text);
+}
+
+.search-interface .guide-step img {
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.search-interface .guide-step a {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--form-button-bg);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.search-interface .guide-step a:hover {
+    text-decoration: underline;
+}
+
+.search-selected-content {
+    margin-top: 20px;
+}
+
+.search-back-button {
+    margin-bottom: 12px;
+    padding: 10px 16px;
+    background-color: var(--form-button-bg);
+    color: var(--form-button-text);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.search-back-button:hover {
+    transform: translateY(-1px);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .search-interface {
+        width: 100%;
+    }
+
+    .search-interface input {
+        width: 100%;
+    }
+
+    .search-results {
+        padding: 12px;
+    }
+
+    .search-interface > .equipment-page,
+    .search-interface > .guide-details {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .search-result-item {
+        padding: 13px 14px;
+    }
+}

@@ -1,0 +1,100 @@
+
+.equipment-page {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    background-color: var(--card-background);
+    box-shadow: var(--box-shadow);
+}
+
+.equipment-page h2 {
+    margin: 0 0 30px 0;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--form-border);
+    text-align: center;
+    font-size: 28px;
+}
+
+.equipment-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.equipment-information p {
+    margin: 0;
+    padding: 16px;
+    border: 1px solid var(--form-border);
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-sizing: border-box;
+}
+
+.equipment-information strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.equipment-information p {
+    font-size: 16px;
+}
+
+.status-available {
+    color: var(--text-status);
+    background-color: var(--success)
+}
+
+.status-on_loan {
+    color: var(--text-status);
+    background-color: var(--error);
+}
+
+.status-maintenance {
+    color: var(--text-status);
+    background-color: var(--maintance)
+}
+
+.status-out_of_service {
+    color: var(--text-status);
+    background-color: var(--maintance)
+}
+
+.status-retired {
+    color: var(--text-status);
+    background-color: var(--retired)
+}
+
+.status-reserved {
+    color: var(--text-status);
+    background-color: var(--reserved)
+}
+
+
+@media (max-width: 600px) {
+    .equipment-page {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .equipment-page h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .equipment-information {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .equipment-information p {
+        padding: 14px;
+    }
+}

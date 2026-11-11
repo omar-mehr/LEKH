@@ -1,0 +1,58 @@
+.audit-log {
+    width: 100%;
+}
+
+.audit-log h2 {
+    margin-bottom: 20px;
+}
+
+.audit-log-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.audit-log-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.audit-log-table th,
+.audit-log-table td {
+    padding: 12px;
+    text-align: left;
+    color: var(--text);
+    font-family: var(--mono);
+}
+
+.audit-log-table th {
+    background-color: var(--tabell-th);
+    font-weight: 600;
+}
+
+.audit-log-table tbody tr:hover {
+    background-color: #374151;
+}
+
+@media (max-width: 600px) {
+    .audit-log {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .audit-log-table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+     .audit-log-table {
+        table-layout: fixed;
+        font-size: 11px;
+    }
+
+    .audit-log-table th,
+    .audit-log-table td {
+        padding: 6px 4px;
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+}
