@@ -17,87 +17,77 @@ Provide different functionality and access depending on the user's role.
 Make the system accessible from computers and mobile devices on the local network.
 
 
-### Software Requirements
+## Software Requirements
 
-**Functional Requirements**
+### Functional Requirements
 
-- **Inventory & Asset Management**
-  - *The system shall allow users with appropriate permissions to register, update, and archive equipment.*
-  - *The system shall distinguish between equipment types and individual equipment units.*
-  - *The system shall store information such as serial numbers, locations, images, datasheets, accessories, and spare parts.*
-  - *The system shall support QR codes or asset tags for identifying individual equipment.*
-  - *The system shall allow users to view the current status and availability of equipment.*
+#### 1. Inventory & Equipment Management
+- The system shall allow authorized users to manage equipment types and individual equipment units.
+- The system shall store equipment information, including identification details, locations, and images.
+- The system shall allow users to identify equipment using QR codes.
+- The system shall allow authorized users to manually update equipment status.
+- The system shall support equipment statuses such as Out of Service, Under Maintenance, and Retired.
 
-- **Loans, Bookings & Returns**
-    - *The system shall allow users to request equipment for a specific period.*
-    - *The system shall allow authorized users to approve or reject loan requests.*
-    - *The system shall keep track of borrowed equipment and expected return dates.*
-    - *The system shall allow equipment to be marked as returned.*
-    - *The system shall prevent conflicting bookings for the same equipment unit.*
+#### 2. Loans & Returns
+- The system shall allow students to request equipment loans.
+- The system shall allow authorized users to approve loan requests.
+- The system shall allow authorized users to check out equipment and register returns.
+- The system shall allow users to upload condition photos when equipment is checked out and returned.
+- The system shall keep track of loan due dates and allow loan renewals.
+- The system shall maintain a loan history for individual equipment units.
+- The system shall allow users to search for loans using a loan ID.
 
-- **Availability Timeline**
-    - *The system shall provide an overview of equipment availability over time.*
-    - *The system shall display whether equipment is available, borrowed, reserved, or unavailable.*
-    - *The system shall allow users to check availability before requesting equipment.*
+#### 3. Fault Reporting
+- The system shall allow caretakers and administrators to report faults associated with equipment types.
+- The system shall allow students to report faults associated with individual equipment units.
+- The system shall allow students, caretakers, and administrators to view fault reports.
+- The system shall allow caretakers and administrators to close fault reports.
 
-- **Condition, Maintenance & Consumables**
-    - *The system shall allow users with appropriate permissions to record the condition of equipment.*
-    - *The system shall keep a history of maintenance and repairs.*
-    - *The system shall support information about consumables, accessories, and spare parts*
-    - *The system shall allow equipment to be marked as unavailable when maintenance or repairs are required.*
+#### 4. Search & Discovery
+- The system shall provide search functionality for equipment and guides.
+- The system shall allow users to find relevant equipment and guides through the search functionality.
 
-- **Fault Reporting & Troubleshooting**
-    - *The system shall allow users to report faults or problems with equipment.*
-    - *The system shall allow authorized users to update the status of reported faults.*
-    - *The system shall store fault reports as part of the equipment history.*
-    - *The system shall provide troubleshooting information when available.*
+#### 5. Guides & Documentation
+- The system shall allow authorized users to create and edit guides.
+- The system shall support step-by-step instructions within guides.
+- The system shall allow users to add images and video links to guides.
+- The system shall allow users to access guides through the application.
 
-- **Guides & Technical Resources**
-    -  *The system shall allow authorized users to add and manage guides and technical documentation.*
-    -  *The system shall allow users to access datasheets, manuals, instructions, and other relevant resources.*
-    -  *The system shall connect technical resources to the relevant equipment.*
+#### 6. Users, Roles & Administration
+- The system shall provide user registration and authentication.
+- The system shall support three user roles: Student, Caretaker, and Administrator.
+- The system shall restrict functionality based on the user's role.
+- The system shall allow administrators to manage users.
+- The system shall allow administrators to create and manage caretaker accounts.
 
-- **Project Library & Idea Catalogue**
-    - *The system shall allow users to create and manage project information.*
-    - *The system shall allow projects to be connected to equipment used in the project.*
-    - *The system shall provide a place for storing project documentation and related resources.*
-    - *The system shall allow users to store and browse ideas for future projects.*
+#### 7. REST API & Audit Logging
+- The system shall provide a REST API for communication between the frontend and backend.
+- The system shall log relevant application actions for auditing purposes.
 
-- **Search & Discovery**
-    - *The system shall provide search functionality for equipment and knowledge resources.*
-    - *The system shall allow users to filter and browse equipment based on relevant information.*
-    - *The system shall organize information into categories to make equipment and resources easier to find.*
+### Non-Functional Requirements
 
-- **Users, Roles & Administration**
-    - *The system shall provide user authentication.*
-    - *The system shall support different user roles and permissions.*
-    - *The system shall restrict functionality based on the user's role.*
-    - *The system shall allow authorized administrators to manage users and their       permissions.*
+#### 1. Security
+- The system shall protect user and application data from unauthorized access.
+- The system shall use role-based access control.
+- The system shall securely handle user authentication and authorization.
+- Sensitive configuration data shall be stored in environment variables rather than directly in the source code.
 
+#### 2. Performance
+- The system should provide reasonable response times when searching, viewing, and updating information.
+- The system should handle the expected number of users and equipment records without significant performance issues.
 
-**Non-Functional Requirements**
- - **Security**
-    - *The system shall protect user and equipment data from unauthorized access.*
-    - *The system shall use role-based access control.*
-    - *The system shall securely handle user authentication and authorization.*
-    - *Sensitive configuration data shall not be stored directly in the source code.*
+#### 3. Usability
+- The system shall provide a clear and easy-to-understand user interface.
+- The system should be usable by users with different levels of technical knowledge.
+- The interface shall be responsive and usable on both computers and mobile devices.
 
-- **Performance**
-    - *The system should provide reasonable response times when searching, viewing, and updating information.*
-    - *The system should be able to handle the expected number of users and equipment records without significant performance issues.*
-- **Usability**
+#### 4. Deployment
+- The system shall be able to run locally within the laboratory environment.
+- The application should be accessible from devices connected to the same local network.
 
-    - *The system shall have a clear and easy-to-understand user interface.*
-    - *The system should be usable by users with different levels of technical knowledge.*
-    - *The interface shall be responsive and usable on both computers and mobile devices.*
-
-- **Deployment**
-    - *The system shall be able to run locally within the laboratory environment.*
-    - *The application should be accessible from devices connected to the same local network.*
-
-- **Maintainability**
-    - *The project shall include documentation explaining how to install, configure, and    run the system.*
-
+#### 5. Maintainability
+- The project shall include documentation explaining how to install, configure, and run the system.
+- The application shall use a separate frontend and backend communicating through a REST API.
 
 ## Installing
 
